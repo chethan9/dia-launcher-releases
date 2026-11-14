@@ -1,0 +1,140 @@
+{
+  "version": "0.27.66",
+  "file": "DIA-Launcher-Setup-0.27.66-x64.exe",
+  "size": 123960721,
+  "sha512": "40a64473781dc894616022f03dd76abcf25425fc958de0bbc3a72841519caea52a4662d6cdd9b237307d086e298bc2d5525cd34e95243ac18e92d86b534f65ed",
+  "parts": [
+    {
+      "file": "DIA-Launcher-Setup-0.27.66-x64.exe.001",
+      "size": 83886080
+    },
+    {
+      "file": "DIA-Launcher-Setup-0.27.66-x64.exe.002",
+      "size": 40074641
+    }
+  ],
+  "date": "2026-11-14T08:16:25.879Z",
+  "notes": [
+    "The second desktop has its own sound",
+    "The controller belongs to the second desktop while it is open"
+  ],
+  "changes": [
+    {
+      "version": "0.27.66",
+      "items": [
+        {
+          "title": "The second desktop has its own sound",
+          "text": "The game on the TV is heard on the TV; what plays at the desk (a video, music, a call) stays on the desk's speakers. By default the second desktop uses the sound output Windows names after that screen, the TV's own speakers. Settings, System, \"Sound of the second desktop\" picks another one: any sound output of the PC (headphones for whoever plays, for example), or \"Same as the desk's\". It is Windows' own per-program output choice, set while the second desktop is open and taken back when it closes."
+        },
+        {
+          "title": "The controller belongs to the second desktop while it is open",
+          "text": "The DIA at the desk does not answer it then: not its screens, the Xbox button, the wheel, the controller as a mouse, or the sleep shortcut. It is DIA's again when the second desktop is closed. (A game or another program running at the desk still reads the controller: one controller is one player's.)"
+        }
+      ]
+    },
+    {
+      "version": "0.27.65",
+      "items": [
+        {
+          "title": "The second desktop shows the DIA everyone knows",
+          "text": "It no longer starts in handheld mode: the normal DIA is already made for a TV. A second desktop that 0.27.63 or 0.27.64 had put in handheld mode goes back to the normal DIA once; handheld mode can still be chosen there in Settings."
+        },
+        {
+          "title": "While the second desktop is open, the DIA at the desk gets out of the way",
+          "text": "It goes to the notification area as soon as the second desktop is on the TV. Its icon there opens DIA again, and its menu has \"Close the second desktop\"."
+        }
+      ]
+    },
+    {
+      "version": "0.27.64",
+      "items": [
+        {
+          "title": "The second desktop is DIA's own now: no other program is needed",
+          "text": "Settings, System has \"Second desktop on the TV\". Switched on once (it changes a Windows setting, so Windows asks for an administrator's approval), then \"Open the second desktop\" puts a second Windows desktop of your own account on the TV, with a second DIA in it, large, for the controller. What is open at the desk stays at the desk. No second Windows account, no Annex, no streaming program: it is Windows' own child session, shown by Windows' own Remote Desktop control in a window that fills the TV. It needs Windows Pro and a second screen."
+        },
+        {
+          "title": "How it behaves",
+          "text": "The second desktop gets the TV's own size, so its picture fills the screen. DIA's own window leaves the TV when the second desktop opens there. DIA starts by itself in the second desktop (a start entry that ends at once at the desk), as the second seat. Leaving DIA there, or \"Close the second desktop\" at the desk, signs the second desktop out: the game there is closed and the TV is free again. From the desk, moving the mouse onto the TV and clicking gives it the keyboard and mouse."
+        },
+        {
+          "title": "Your Windows password stays with Windows",
+          "text": "If a sign-in is needed, Windows' own box asks; DIA never sees or keeps it."
+        },
+        {
+          "title": "What it does not do",
+          "text": "No HDR in the second desktop, and its picture goes through Windows' Remote Desktop, which limits how many frames a second reach the TV. DIA is not updated while the second desktop is in use. In Zen mode it is not switched on or opened. Switching it off puts the Windows settings back."
+        }
+      ]
+    },
+    {
+      "version": "0.27.63",
+      "items": [
+        {
+          "title": "The second seat: one PC, two people",
+          "text": "One works at the desk, the other plays on the TV, and neither disturbs the other. Windows can run a second desktop of the same user beside the first, with its own keyboard, mouse and active window (a \"child session\", on Windows Pro; the free program Annex sets it up and streams it to the TV with Sunshine and Moonlight). DIA used to run once per user. Now, started in that second desktop while a DIA is running at the desk, it runs as a second copy: the second seat. Or always, when started with --seat2."
+        },
+        {
+          "title": "What the second seat is",
+          "text": "It has settings of its own (a folder beside the first one's) and the same library. It starts large, in handheld mode, full screen, and says \"second seat\". Closing it ends it. It only starts games, as in Zen mode: everything that changes Windows (screen, taskbar, the Xbox button, starting with Windows) and DIA's own updates stay with the DIA at the desk."
+        },
+        {
+          "title": "Two library engines on one library",
+          "text": "no longer share one temporary file when they write."
+        },
+        {
+          "title": "The desk is always the first seat",
+          "text": "Which DIA is which is decided by the place, not by which one was started first: at the desk it is always the first seat, in the second desktop always the second, also when no DIA is running at the desk. Nothing shifts: a program stays on the desktop it was started on for as long as it runs, so what is open at the desk stays at the desk, and the second desktop starts empty."
+        },
+        {
+          "title": "Steam follows the game",
+          "text": "Steam runs once on a PC. When a Steam game is started on one desktop while Steam is running on the other, DIA closes it there (it is asked; if it does not answer, it is ended) and Steam starts where the game was asked for. The launch screen says \"Bringing Steam to this screen…\". If a game is running through Steam over there, nothing is closed: DIA says that Steam is in use on the other screen."
+        },
+        {
+          "title": "\"Steam overlay\" in the wheel",
+          "text": "In a game that was started through Steam, the wheel has a \"Steam overlay\" entry (in the game's own wheel, and under Overlay). It opens Steam's own overlay in that game by pressing Steam's shortcut for it, Shift + Tab, once the wheel is gone and the game is in front again. DIA cannot switch Steam's overlay or its frame counter on or off (those are Steam's settings, and part of a game from its start); it can only open it. If you changed the shortcut in Steam (Settings → In Game), this entry does not know."
+        },
+        {
+          "title": "Other launchers stay behind the loading screen",
+          "text": "A game that starts through the EA app, Ubisoft Connect, Rockstar's launcher and the like used to make DIA's launch screen step aside the moment that launcher appeared, so every such start showed the launcher's windows over the loading screen. Now the launch screen stays in front while the launcher only passes the game on. If the game's own program has not come after half a minute, the launcher may need you (a sign-in, an update): the launch screen then steps aside and shows it. B on the launch screen shows it at once."
+        },
+        {
+          "title": "Every game is covered from the moment Play is pressed",
+          "text": ", not only Steam games. (In big picture, as before.)"
+        }
+      ]
+    },
+    {
+      "version": "0.27.62",
+      "items": [
+        {
+          "title": "Zen mode",
+          "text": "One switch, Settings → System → \"Zen mode\", for \"just start my games, the way that works everywhere\". With it on, DIA does nothing to Windows and nothing to a game beyond starting it and noticing when it has closed. Your settings are kept, and come back as they were when you switch it off."
+        },
+        {
+          "title": "What Zen mode switches off, in games",
+          "text": "Nothing of DIA goes into a game: no statistics drawn in it (and no statistics window over it), no frame limit, no picture effects, no performance recording. The wheel and the panel do not open over a game, a game is not paused, and there is no cover window over a starting game and none of the per-game window, priority, pointer or taskbar options."
+        },
+        {
+          "title": "What Zen mode switches off, in Windows",
+          "text": "The screen's colour modes, brightness, HDR, resolution, refresh rate, scale, switching screens and profiles; hiding the taskbar; Do Not Disturb; hiding the mouse pointer; the controller as a mouse; taking over the Xbox button from Game Bar and Steam; Xbox mode; and Steam's dialogs are no longer clicked for you. Handheld mode is off as well."
+        },
+        {
+          "title": "What still works in Zen mode",
+          "text": "The library, artwork, starting and closing games, playtime, sound and volume, Wi-Fi and Bluetooth, the wheel while DIA itself is in front, updates and bug reports."
+        },
+        {
+          "title": "The statistics no longer capture a game to count its frames",
+          "text": "In a game DIA cannot get into (other drawing methods, copy protection: Phantom Blade Zero is one), the only way to count frames from outside is to capture the game's window. That takes the game off its fastest way of showing frames, costs frames itself, and the count is what Windows composes, not what the game draws: on a 144 Hz screen it read 48. DIA did that for every such game. Now it does not: there the statistics show the other numbers (GPU, CPU, memory) without a frame rate. Settings → Gameplay → \"Frame rate in games DIA cannot get into\" switches the capture back on for those who want the number anyway."
+        },
+        {
+          "title": "Recording a game's performance counts its frames from inside the game",
+          "text": ", like the statistics drawn in it, instead of capturing its window."
+        },
+        {
+          "title": "Switched on while a game runs",
+          "text": ", Zen mode takes effect at once: what DIA had put into that game stops limiting and drawing. Switched off again, it comes back without restarting the game."
+        }
+      ]
+    }
+  ]
+}
